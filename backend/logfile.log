@@ -1,0 +1,21 @@
+{ message: 'Server running on port 8080',
+  level: 'info',
+  timestamp: '2019-03-05T17:31:00.746Z' }
+{ message: 'Server running on port 8080',
+  level: 'info',
+  timestamp: '2019-03-05T17:33:28.027Z' }
+{ message: 'Server running on port 8080',
+  level: 'info',
+  timestamp: '2019-03-05T17:33:46.874Z' }
+{ message: 'Server running on port 8080',
+  level: 'info',
+  timestamp: '2019-03-05T17:37:39.736Z' }
+{ message: 'Connected to  MongoDB',
+  level: 'info',
+  timestamp: '2019-03-05T17:37:39.797Z' }
+{ message: 'Server running on port 8080',
+  level: 'info',
+  timestamp: '2019-03-05T17:38:43.315Z' }
+{ message: 'Connected to  MongoDB',
+  level: 'info',
+  timestamp: '2019-03-05T17:38:43.369Z' }
