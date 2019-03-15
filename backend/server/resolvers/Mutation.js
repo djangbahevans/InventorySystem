@@ -21,6 +21,8 @@ const Mutation = {
         req
     }, info) => req.logout(),
     createUser: async (parent, { data }, { req, res }, info) => {
+        if (!user.isAuthenticated()) throw new Error('Permission denied');
+
         let { name, role, username, password } = data;
 
         const existingUser = await User.findOne({ username });
@@ -34,17 +36,11 @@ const Mutation = {
             name, password, role, username
         });
 
-        // if (user) {
-        //     return req.login(user, (err) => {  /// T
-        //         if (err) return res.send({ error: 'Error logging in' })
-        //         else return res.send(user);
-        //     });
-        // }
-        // else return res.send({ err: 'Error creating new account' })
-
         return user;
     },
     editUser: async (parent, { id, data }, ctx, info) => {
+        if (!user.isAuthenticated()) throw new Error('Permission denied');
+
         const user = await User.findById(id);
         if (!user) throw new Error("User does not exist");
 
@@ -63,11 +59,15 @@ const Mutation = {
         return user;
     },
     deleteUser: async (parent, { id }, ctx, info) => {
+        if (!user.isAuthenticated()) throw new Error('Permission denied');
+
         const user = await User.findByIdAndDelete(id);
         if (!user) throw new Error("User does not exist");
         return user;
     },
     createRequisition: async (parent, args, ctx, info) => {
+        if (!user.isAuthenticated()) throw new Error('Permission denied');
+
         let { name, role, item, returnDate } = args.data;
 
         // return date string in format YYYY-MM-DD;
@@ -102,6 +102,8 @@ const Mutation = {
         };
     },
     editRequisition: async (parent, { id, data }, ctx, info) => {
+        if (!user.isAuthenticated()) throw new Error('Permission denied');
+
         const { role, item, returnDate, actualReturnDate } = data;
         let requisition = await Requisition.findById(id);
 
@@ -116,17 +118,14 @@ const Mutation = {
         return requisition;
     },
     deleteRequisition: async (parent, { id }, ctx, info) => {
+        if (!user.isAuthenticated()) throw new Error('Permission denied');
+
         const requisition = await Requisition.findByIdAndDelete(id);
         if (!requisition) throw new Error("Requisition not found");
 
         let stock = await Stock.findById(requisition.item);
 
-        if (!requisition.actualReturnDate)++stock.numberInStock; // Increase Stock numberInStock Count
-
-        // Add requisition to Stock requisitionHistory
-        // const { _id, item, ...requisitionHistory } = requisition._doc;
-        // requisitionHistory.actualReturnDate = new Date();
-        // stock.requisitionHistory.push(requisitionHistory);
+        if (!requisition.actualReturnDate) ++stock.numberInStock; // Increase Stock numberInStock Count
 
         stock.requisitionHistory = stock.requisitionHistory.filter(req => !req.equals(id));
 
@@ -134,6 +133,8 @@ const Mutation = {
         return requisition;
     },
     createStock: async (parent, { data }, ctx, info) => {
+        if (!user.isAuthenticated()) throw new Error('Permission denied');
+
         let { name, quantity, numberInStock } = data;
         if (!numberInStock) numberInStock = quantity;
 
@@ -152,6 +153,8 @@ const Mutation = {
         return stock;
     },
     editStock: async (parent, { id, data }, ctx, info) => {
+        if (!user.isAuthenticated()) throw new Error('Permission denied');
+
         let { quantity, numberInStock } = data;
         const stock = await Stock.findById(id);
 
@@ -173,6 +176,8 @@ const Mutation = {
         return stock;
     },
     deleteStock: async (parent, { id }, ctx, info) => {
+        if (!user.isAuthenticated()) throw new Error('Permission denied');
+
         const stock = await Stock.findById(id);
         if (!stock) throw new Error("Stock not found");
 
