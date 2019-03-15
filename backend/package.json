@@ -5,10 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js --no-deprecation",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode=development --watch",
-    "build-prod": "webpack --mode=production",
-    "devServer": "webpack-dev-server --mode=development --hot --inline"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "evans djangbah",
   "license": "ISC",
