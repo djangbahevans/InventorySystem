@@ -17,7 +17,7 @@ module.exports = {
     optimization: {
         minimize: true
     },
-    devtool: 'cheap-eval-source-map',
+    devtool: 'none',
     devServer: {
         contentBase: path.join(__dirname, 'public'),
         compress: true,
