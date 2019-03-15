@@ -10,7 +10,7 @@ import AppRouter from './routes/AppRouter';
 
 
 const client = new ApolloClient({
-    uri: 'https://vast-inlet-78468.herokuapp.com/graphql'
+    uri: 'http://localhost:8080/graphql'
 });
 
 client.query({

@@ -34,7 +34,7 @@ app.use(morgan('combined', {
 }));
 
 // Database Connection
-const URI = process.env.MONGODB_URI || "mongodb://localhost:27017/inventory";
+const URI = process.env.MONGODB_URI || "mongodb://mongo:27017/inventory";
 mongoose.connect(URI, {
     useNewUrlParser: true
 })
@@ -103,7 +103,8 @@ User.find({}, (err, res) => {
 });
 
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 4000;
+console.log(PORT)
 app.listen(PORT, () => {
     logger.info(`Server running on port ${PORT}`);
 });
