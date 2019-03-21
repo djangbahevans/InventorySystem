@@ -1,48 +1,41 @@
 {
-  "name": "inventory-app-frontend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode=development --watch",
-    "build-prod": "webpack --mode=production",
-    "devServer": "webpack-dev-server --mode=development --hot --inline"
-  },
-  "author": "evans djangbah",
-  "license": "ISC",
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "@babel/core": "^7.3.4",
-    "@babel/plugin-proposal-class-properties": "^7.3.4",
-    "@babel/polyfill": "^7.2.5",
-    "@babel/preset-env": "^7.3.4",
-    "@babel/preset-react": "^7.0.0",
     "@material-ui/core": "^3.9.2",
     "@material-ui/icons": "^3.0.2",
     "@material-ui/styles": "^3.0.0-alpha.10",
     "apollo-boost": "^0.3.1",
     "apollo-cache-inmemory": "^1.5.1",
     "apollo-client": "^2.5.1",
-    "apollo-link": "^1.2.8",
-    "apollo-link-error": "^1.1.7",
-    "apollo-link-http": "^1.5.11",
-    "babel-loader": "^8.0.5",
+    "apollo-link": "^1.2.11",
+    "apollo-link-error": "^1.1.10",
+    "apollo-link-http": "^1.5.14",
     "graphql": "^14.1.1",
     "graphql-tag": "^2.10.1",
-    "history": "^4.7.2",
+    "history": "^4.9.0",
     "moment": "^2.24.0",
-    "react": "^16.8.3",
-    "react-apollo": "^2.5.1",
-    "react-dom": "^16.8.3",
-    "react-router-dom": "^4.3.1",
-    "react-select": "^2.4.1",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.2.3",
-    "webpack-dev-server": "^3.2.1"
+    "react": "^16.8.4",
+    "react-apollo": "^2.5.2",
+    "react-dom": "^16.8.4",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "2.1.8",
+    "react-select": "^2.4.2"
   },
-  "devDependencies": {
-    "@babel/plugin-proposal-object-rest-spread": "^7.3.4",
-    "@types/mongoose": "^5.3.20",
-    "jshint": "^2.10.1"
-  }
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

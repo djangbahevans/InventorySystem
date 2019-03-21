@@ -52,7 +52,7 @@ class CreateRequisitionModal extends React.Component {
             if (returnDate.diff(today) < 0) return this.setState({ dateError: true, error: 'The date must be today or in the future' })
             else return this.setState({ dateError: false, returnDate, error: '' })
         };
-        if (name == 'item') {
+        if (name === 'item') {
             this.setState({ error: '' });
             return this.setState({ [name]: capitalizeWords(event) })
         }

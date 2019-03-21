@@ -1,21 +1,387 @@
-{ message: 'Server running on port 8080',
+{ message: 'Server running on port 4000',
   level: 'info',
-  timestamp: '2019-03-05T17:31:00.746Z' }
-{ message: 'Server running on port 8080',
-  level: 'info',
-  timestamp: '2019-03-05T17:33:28.027Z' }
-{ message: 'Server running on port 8080',
-  level: 'info',
-  timestamp: '2019-03-05T17:33:46.874Z' }
-{ message: 'Server running on port 8080',
-  level: 'info',
-  timestamp: '2019-03-05T17:37:39.736Z' }
+  timestamp: '2019-03-21T10:48:00.589Z' }
 { message: 'Connected to  MongoDB',
   level: 'info',
-  timestamp: '2019-03-05T17:37:39.797Z' }
-{ message: 'Server running on port 8080',
+  timestamp: '2019-03-21T10:48:01.673Z' }
+{ message: 'Server running on port 4000',
   level: 'info',
-  timestamp: '2019-03-05T17:38:43.315Z' }
+  timestamp: '2019-03-21T11:00:14.110Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:00:14.404Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:00:21.908Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:00:21.918Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:00:28.968Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:00:28.978Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:00:39.319Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:00:39.328Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:00:45.329Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:00:45.339Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:00:49.083Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:00:49.093Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:00:54.209Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:00:54.219Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:01:02.564Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:01:02.573Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:01:17.350Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:01:17.360Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:01:46.603Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:01:46.612Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:02:40.032Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:02:40.042Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:03:41.996Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:03:42.005Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:04:44.033Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:04:44.042Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:05:45.989Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:05:45.999Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:06:48.311Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:06:48.321Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:07:50.303Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:07:50.313Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:08:52.378Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:08:52.388Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:09:54.391Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:09:54.407Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:10:56.597Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:10:56.607Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:11:58.797Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:11:58.807Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:13:00.924Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:13:00.935Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:14:02.936Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:14:02.946Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:15:04.780Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:15:04.789Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:16:06.626Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:16:06.635Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:17:08.516Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:17:08.526Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:18:10.387Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:18:10.398Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:19:12.283Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:19:12.293Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:20:14.270Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:20:14.279Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:21:16.228Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:21:16.242Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:22:18.163Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:22:18.172Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:23:20.130Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:23:20.140Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:24:22.033Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:24:22.043Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:25:23.923Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:25:23.932Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:26:25.810Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:26:25.820Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:27:27.724Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:27:27.734Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:28:29.553Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:28:29.562Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:29:31.435Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:29:31.445Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:30:33.305Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:30:33.317Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:31:35.199Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:31:35.209Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:32:37.357Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:32:37.368Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:33:39.468Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:33:39.478Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:34:41.467Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:34:41.477Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:35:43.587Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:35:43.598Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:36:45.558Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:36:45.567Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:37:47.512Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:37:47.522Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:38:49.727Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:38:49.737Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:39:51.767Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:39:51.777Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:40:53.785Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:40:53.794Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:41:55.707Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:41:55.717Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:42:57.725Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:42:57.735Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:43:59.741Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:43:59.751Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:45:01.976Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:45:01.987Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:46:04.298Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:46:04.307Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:47:06.593Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:48:08.589Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:48:08.603Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:49:10.607Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:49:10.617Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:50:12.590Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:50:12.602Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:51:15.816Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:51:15.827Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:51:19.498Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:51:19.523Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:51:46.527Z' }
+{ message: 'Could not connect to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:51:46.553Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:52:02.461Z' }
 { message: 'Connected to  MongoDB',
   level: 'info',
-  timestamp: '2019-03-05T17:38:43.369Z' }
+  timestamp: '2019-03-21T11:52:02.499Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T11:58:39.428Z' }
+{ message: 'Connected to  MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T11:58:39.480Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T12:35:28.143Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T12:36:47.391Z' }
+{ message: 'Server running on port 4000',
+  level: 'info',
+  timestamp: '2019-03-21T12:37:16.381Z' }
+{ message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2019-03-21T12:37:17.170Z' }

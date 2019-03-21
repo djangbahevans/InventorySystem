@@ -95,6 +95,7 @@ class DashboardPage extends Component {
                                                     </TableHead>
 
                                                     <TableBody>
+                                                        {/* eslint-disable-next-line */}
                                                         {data.requisitions.map((row, idx) => {
                                                             if (idx < 5) {
                                                                 return (
@@ -143,6 +144,7 @@ class DashboardPage extends Component {
                                                         </TableRow>
                                                     </TableHead>
                                                     <TableBody>
+                                                        {/* eslint-disable-next-line */}
                                                         {data.stocks.map((row, idx) => {
                                                             if (idx < 3)
                                                                 return (

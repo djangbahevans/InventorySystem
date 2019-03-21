@@ -1,8 +1,9 @@
 import CssBaseline from '@material-ui/core/CssBaseline';
-import createHistory from 'history/createBrowserHistory';
+import {createBrowserHistory} from 'history';
 import React from 'react';
 import { Route, Router, Switch } from 'react-router-dom';
-import Calender from '../components/CalenderPage';
+import Tasks from '../components/TasksPage';
+import Users from '../components/UsersPage';
 import Dashboard from '../components/DashboardPage';
 import Login from "../components/LoginPage";
 import NotFoundPage from '../components/NotFoundPage';
@@ -13,7 +14,7 @@ import PublicRoute from './PublicRoute';
 // import { MuiThemeProvider } from '@material-ui/core/styles';
 // import theme from './theme/theme';
 
-export const history = createHistory();
+export const history = createBrowserHistory();
 
 const AppRouter = () => (
     <Router history={history}>
@@ -24,7 +25,8 @@ const AppRouter = () => (
                 <PrivateRoute path='/dashboard' component={Dashboard} exact />
                 <PrivateRoute path='/requisitions' component={Requisitions} exact />
                 <PrivateRoute path='/stock' component={Stocks} exact />
-                <PrivateRoute path='/calender' component={Calender} exact />
+                <PrivateRoute path='/tasks' component={Tasks} exact />
+                <PrivateRoute path='/users' component={Users} exact />
                 <Route component={NotFoundPage} />
             </Switch>
         </div>

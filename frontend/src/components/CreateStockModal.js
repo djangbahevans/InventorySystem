@@ -40,16 +40,16 @@ class CreateStockModal extends Component {
     }
 
     handleChange = name => event => {
-        if (name == 'name') return this.setState({ name: capitalizeWords(event.target.value) });
+        if (name === 'name') return this.setState({ name: capitalizeWords(event.target.value) });
 
         const num = Number.parseInt(event.target.value);
         if (name === 'quantity') {
-            if (num != event.target.value) return; // Must be an integer
+            if (num !== event.target.value) return; // Must be an integer
             if (!num || num <= 0) return  // Cannot be empty or Cannot be negative or zero
             if (this.state.numberInStock > num) this.setState({ numberInStock: num })
         }
         else if (name === 'numberInStock') {
-            if (num != event.target.value) return; // Must be an integer
+            if (num !== event.target.value) return; // Must be an integer
             if (isNaN(num) || num < 0 || num > this.state.quantity) return; // Cannot be empty or greater than quantity
         }
 

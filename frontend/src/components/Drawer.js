@@ -1,24 +1,7 @@
-import { Button, IconButton, Tooltip } from '@material-ui/core';
-import AppBar from '@material-ui/core/AppBar';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Divider from '@material-ui/core/Divider';
-import Drawer from '@material-ui/core/Drawer';
-import InputBase from '@material-ui/core/InputBase';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
+import { AppBar, CssBaseline, Divider, Drawer, IconButton, InputBase, List, ListItem, ListItemIcon, ListItemText, Toolbar, Tooltip } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import { fade } from '@material-ui/core/styles/colorManipulator';
-import Toolbar from '@material-ui/core/Toolbar';
-import AddShoppingCart from '@material-ui/icons/AddShoppingCart';
-import Calender from '@material-ui/icons/CalendarToday';
-import Dashboard from '@material-ui/icons/Dashboard';
-import Report from '@material-ui/icons/Description';
-import Search from '@material-ui/icons/Search';
-import Store from '@material-ui/icons/Store';
-import ExitToApp from "@material-ui/icons/ExitToApp";
-import LibraryAdd from "@material-ui/icons/LibraryAdd"
+import { AddShoppingCart, People, Dashboard, Description, ExitToApp, LibraryAdd, Search, Store } from '@material-ui/icons';
 import React, { Component } from 'react';
 import { Mutation } from 'react-apollo';
 import { Link } from 'react-router-dom';
@@ -119,8 +102,8 @@ class SideDrawer extends Component {
             <Dashboard />,
             <AddShoppingCart />,
             <Store />,
-            <Calender />,
-            <Report />
+            <Description />,
+            <People />,
         ]
 
         return (
@@ -174,7 +157,7 @@ class SideDrawer extends Component {
                     <div className={classes.toolbar} />
                     <Divider />
                     <List>
-                        {['Dashboard', 'Requisitions', 'Stock', 'Calender', 'Reports'].map((text, index) => (
+                        {['Dashboard', 'Requisitions', 'Stock', 'Tasks', 'Users'].map((text, index) => (
                             <ListItem button component={Link} to={text} key={text}>
                                 <ListItemIcon>{React.cloneElement(icons[index], pathname.endsWith(text.toLowerCase()) ? { color: 'primary' } : {})}</ListItemIcon>
                                 <ListItemText primary={text} primaryTypographyProps={pathname.endsWith(text.toLowerCase()) ? { color: 'primary' } : {}} />

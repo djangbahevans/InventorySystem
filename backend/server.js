@@ -34,19 +34,22 @@ app.use(morgan('combined', {
 }));
 
 // Database Connection
-const URI = process.env.MONGODB_URI || "mongodb://mongo:27017/inventory";
+const URI = process.env.MONGODB_URI || "mongodb://localhost:27017/inventory";
 mongoose.connect(URI, {
-    useNewUrlParser: true
-})
-    .then(() => logger.info('Connected to  MongoDB'))
+        useNewUrlParser: true
+    })
+    .then(() => logger.info('Connected to MongoDB'))
     .catch(() => {
         logger.info('Could not connect to MongoDB');
         process.abort();
     });
 
 // 3rd Party Middleware 
-app.use(helmet())
-app.use(cors({ credentials: true, }))
+app.use(helmet());
+app.use(cors({
+    credentials: true,
+    origin: 'http://localhost:3000'
+}))
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
@@ -61,14 +64,14 @@ app.use(session({
         mongooseConnection: mongoose.connection
     }),
     cookie: {
-        secure: true
+        secure: false,
     }
 }));
 require('./server/auth/auth')(app); // After app.use(sessions)
 
 // Server
 const server = new ApolloServer({
-    typeDefs: gql`${fs.readFileSync(__dirname.concat('/server/schema/schema.graphql'), 'utf8')}`,
+    typeDefs: gql `${fs.readFileSync(__dirname.concat('/server/schema/schema.graphql'), 'utf8')}`,
     resolvers: {
         Mutation,
         Query,
@@ -89,7 +92,11 @@ const server = new ApolloServer({
 });
 
 server.applyMiddleware({
-    app
+    app,
+    cors: {
+        credentials: true,
+        origin: 'http://localhost:3000'
+    }
 });
 
 // Add default user if user does not exist
@@ -104,7 +111,6 @@ User.find({}, (err, res) => {
 
 
 const PORT = process.env.PORT || 4000;
-console.log(PORT)
 app.listen(PORT, () => {
     logger.info(`Server running on port ${PORT}`);
 });

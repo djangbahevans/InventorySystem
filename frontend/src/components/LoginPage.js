@@ -50,7 +50,6 @@ const styles = theme => ({
         overflow: 'hidden',
         height: '100vh',
         width: '100vw',
-        overflow: 'hidden',
     }
 })
 
@@ -80,7 +79,7 @@ class LoginPage extends Component {
                         <Grid container className={classes.containerGrid}>
                             <Grid item xs={8}>
                                 <div className={classes.imageContainer}>
-                                    <img className={classes.paper__image} src={'./img/action-artisan-burnt-1145434.jpg'} />
+                                    <img className={classes.paper__image} src={'./img/action-artisan-burnt-1145434.jpg'} alt='' />
                                 </div>
                             </Grid>
                             <Grid item xs={4}>

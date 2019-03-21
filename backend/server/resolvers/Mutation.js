@@ -13,7 +13,12 @@ const Mutation = {
                 if (err) reject(err);
                 if (!user) reject('Invalid username or password');
 
-                req.login(user, () => resolve(user));
+                req.login(user, (err) => {
+                    if (err) {
+                        console.log(err);
+                    }
+                    return resolve(user)
+                });
             })({ body: { username, password } });
         });
     },
