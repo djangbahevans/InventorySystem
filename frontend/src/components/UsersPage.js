@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
-import { Paper, withStyles, CssBaseline, Grid, Badge, Typography, Button, Divider, Table, TableRow, TableCell, TableHead } from '@material-ui/core';
+import { Paper, withStyles, CssBaseline, Grid, Badge, Typography, Button, Divider, Table, TableRow, TableCell, TableHead, CircularProgress, TableBody } from '@material-ui/core';
 import Drawer from './Drawer';
+import { Query } from 'react-apollo';
+import { GET_USERS_QUERY } from '../queries/Queries';
+import moment from 'moment';
+import UsersTableRow from './UsersTableRow';
+
 
 const styles = theme => ({
     root: {
@@ -53,22 +58,43 @@ class UsersPage extends Component {
                                     variant='outlined'
                                     color='primary'
                                     className={classes.createNewButton}
-                                    onClick={this.handleOpen}>Add New</Button>
+                                    onClick={this.handleOpen}>Add New Users</Button>
                             </Grid>
                         </Grid>
                         <Divider variant='middle' />
                         <div className={classes.table}>
-                            <Table padding='dense'>
-                                <TableHead>
-                                    <TableRow>
-                                        <TableCell>Name</TableCell>
-                                        <TableCell>Role</TableCell>
-                                        <TableCell>Item</TableCell>
-                                        <TableCell>Return Date</TableCell>
-                                        <TableCell></TableCell>
-                                    </TableRow>
-                                </TableHead>
-                            </Table>
+                            <Query query={GET_USERS_QUERY}>
+                                {({loading, error, data}) => {
+                                    if (loading) return <CircularProgress />
+                                    if (error) return <Typography>{error.message}</Typography>
+                                    return (
+                                        <Table padding='dense'>
+                                            <TableHead>
+                                                <TableRow>
+                                                    <TableCell>Name</TableCell>
+                                                    <TableCell>Role</TableCell>
+                                                    <TableCell>Username</TableCell>
+                                                    <TableCell></TableCell>
+                                                </TableRow>
+                                            </TableHead>
+                                            <TableBody>
+                                                {data.users.map(row => (
+                                                    <UsersTableRow
+                                                        key={row._id}
+                                                        id={row._id}
+                                                        name={row.name}
+                                                        role={row.role}
+                                                        username={row.username}
+                                                        returnDate={
+                                                            moment(row.returnDate, "YYYY-MM-DD").format("Do MMMM, YYYY")
+                                                        }
+                                                        handleEdit={this.handleEdit} />
+                                                ))}
+                                            </TableBody>
+                                        </Table>
+                                    )
+                                }}
+                            </Query>
                         </div>
 
                     </Paper>

@@ -36,7 +36,9 @@ app.use(morgan('combined', {
 // Database Connection
 const URI = process.env.MONGODB_URI || "mongodb://localhost:27017/inventory";
 mongoose.connect(URI, {
-        useNewUrlParser: true
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        useCreateIndex: true
     })
     .then(() => logger.info('Connected to MongoDB'))
     .catch(() => {

@@ -15,7 +15,7 @@ const Mutation = {
 
                 req.login(user, (err) => {
                     if (err) {
-                        console.log(err);
+                        reject(err);
                     }
                     return resolve(user)
                 });
@@ -26,7 +26,7 @@ const Mutation = {
         req
     }, info) => req.logout(),
     createUser: async (parent, { data }, { req, res }, info) => {
-        if (!user.isAuthenticated()) throw new Error('Permission denied');
+        if (!req.isAuthenticated()) throw new Error('Permission denied');
 
         let { name, role, username, password } = data;
 
@@ -43,8 +43,8 @@ const Mutation = {
 
         return user;
     },
-    editUser: async (parent, { id, data }, ctx, info) => {
-        if (!user.isAuthenticated()) throw new Error('Permission denied');
+    editUser: async (parent, { id, data }, {req, res}, info) => {
+        if (!req.isAuthenticated()) throw new Error('Permission denied');
 
         const user = await User.findById(id);
         if (!user) throw new Error("User does not exist");
@@ -63,15 +63,15 @@ const Mutation = {
 
         return user;
     },
-    deleteUser: async (parent, { id }, ctx, info) => {
-        if (!user.isAuthenticated()) throw new Error('Permission denied');
+    deleteUser: async (parent, { id }, {req, res}, info) => {
+        if (!req.isAuthenticated()) throw new Error('Permission denied');
 
         const user = await User.findByIdAndDelete(id);
         if (!user) throw new Error("User does not exist");
         return user;
     },
-    createRequisition: async (parent, args, ctx, info) => {
-        if (!user.isAuthenticated()) throw new Error('Permission denied');
+    createRequisition: async (parent, args, {req, res}, info) => {
+        if (!req.isAuthenticated()) throw new Error('Permission denied');
 
         let { name, role, item, returnDate } = args.data;
 
@@ -106,8 +106,8 @@ const Mutation = {
             returnDate: moment(returnDate).format("YYYY-MM-DD")
         };
     },
-    editRequisition: async (parent, { id, data }, ctx, info) => {
-        if (!user.isAuthenticated()) throw new Error('Permission denied');
+    editRequisition: async (parent, { id, data }, {req, res}, info) => {
+        if (!res.user.isAuthenticated()) throw new Error('Permission denied');
 
         const { role, item, returnDate, actualReturnDate } = data;
         let requisition = await Requisition.findById(id);
@@ -122,8 +122,8 @@ const Mutation = {
 
         return requisition;
     },
-    deleteRequisition: async (parent, { id }, ctx, info) => {
-        if (!user.isAuthenticated()) throw new Error('Permission denied');
+    deleteRequisition: async (parent, { id }, {req, res}, info) => {
+        if (!req.isAuthenticated()) throw new Error('Permission denied');
 
         const requisition = await Requisition.findByIdAndDelete(id);
         if (!requisition) throw new Error("Requisition not found");
@@ -137,8 +137,8 @@ const Mutation = {
         await stock.save();
         return requisition;
     },
-    createStock: async (parent, { data }, ctx, info) => {
-        if (!user.isAuthenticated()) throw new Error('Permission denied');
+    createStock: async (parent, { data }, {req, res}, info) => {
+        if (!req.isAuthenticated()) throw new Error('Permission denied');
 
         let { name, quantity, numberInStock } = data;
         if (!numberInStock) numberInStock = quantity;
@@ -157,8 +157,8 @@ const Mutation = {
 
         return stock;
     },
-    editStock: async (parent, { id, data }, ctx, info) => {
-        if (!user.isAuthenticated()) throw new Error('Permission denied');
+    editStock: async (parent, { id, data }, {req, res}, info) => {
+        if (!req.isAuthenticated()) throw new Error('Permission denied');
 
         let { quantity, numberInStock } = data;
         const stock = await Stock.findById(id);
@@ -180,8 +180,8 @@ const Mutation = {
 
         return stock;
     },
-    deleteStock: async (parent, { id }, ctx, info) => {
-        if (!user.isAuthenticated()) throw new Error('Permission denied');
+    deleteStock: async (parent, { id }, {req, res}, info) => {
+        if (!req.isAuthenticated()) throw new Error('Permission denied');
 
         const stock = await Stock.findById(id);
         if (!stock) throw new Error("Stock not found");

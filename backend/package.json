@@ -10,29 +10,29 @@
   "author": "evans djangbah",
   "license": "ISC",
   "dependencies": {
-    "apollo-server": "^2.4.8",
-    "apollo-server-express": "^2.4.8",
-    "babel-loader": "^8.0.5",
+    "apollo-server": "^2.16.1",
+    "apollo-server-express": "^2.16.1",
+    "babel-loader": "^8.1.0",
     "bcryptjs": "^2.4.3",
-    "body-parser": "^1.18.3",
-    "connect-mongo": "^2.0.3",
-    "cookie-parser": "^1.4.4",
+    "body-parser": "^1.19.0",
+    "connect-mongo": "^3.2.0",
+    "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
-    "express": "^4.16.4",
-    "express-session": "^1.15.6",
-    "graphql": "^14.1.1",
-    "graphql-tag": "^2.10.1",
-    "helmet": "^3.15.1",
-    "moment": "^2.24.0",
-    "mongoose": "^5.4.17",
-    "morgan": "^1.9.1",
-    "passport": "^0.4.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "graphql": "^15.3.0",
+    "graphql-tag": "^2.11.0",
+    "helmet": "^4.0.0",
+    "moment": "^2.27.0",
+    "mongoose": "^5.9.28",
+    "morgan": "^1.10.0",
+    "passport": "^0.4.1",
     "passport-local": "^1.0.0",
-    "winston": "^3.2.1"
+    "winston": "^3.3.3"
   },
   "devDependencies": {
-    "@types/mongoose": "^5.3.20",
-    "jshint": "^2.10.1"
+    "@types/mongoose": "^5.7.36",
+    "jshint": "^2.12.0"
   },
   "engines": {
     "node": "10.x"
